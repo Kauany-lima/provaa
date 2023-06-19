@@ -1,3 +1,5 @@
+using System.Data;
+
 namespace provaa
 {
     public partial class Form1 : Form
@@ -14,7 +16,7 @@ namespace provaa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string a = label5.Text;
+
 
             string ser = textBox4.Text;
             string valor = textBox5.Text;
@@ -27,17 +29,17 @@ namespace provaa
                 if (valor == "1")
                 {
                     double re = 100 - (100 * 0.20);
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
                 else if (valor == "2")
                 {
                     double re = 100 - (100 * 0.10);
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
                 else
                 {
                     double re = 100;
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
             }
             //2
@@ -46,17 +48,17 @@ namespace provaa
                 if (valor == "1")
                 {
                     double re = 50 - (50 * 0.20);
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
                 else if (valor == "2")
                 {
                     double re = 50 - (50 * 0.10);
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
                 else
                 {
                     double re = 50;
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
             }
 
@@ -66,17 +68,17 @@ namespace provaa
                 if (valor == "1")
                 {
                     double re = 200 - (200 * 0.20);
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
                 else if (valor == "2")
                 {
                     double re = 200 - (200 * 0.10);
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
                 else
                 {
                     double re = 200;
-                    a = Convert.ToString(re);
+                    MessageBox.Show(Convert.ToString(re));
                 }
             }
 
@@ -91,6 +93,16 @@ namespace provaa
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string tx1 = textBox1.Text;
+            string tx2 = textBox2.Text;
+            string tx3 = textBox4.Text;
+            string tx4 = textBox5.Text;
+         
+            
         }
     }
 }
